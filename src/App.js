@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import React, { Fragment } from 'react'
+import ExempleBootstrap from './components/ExempleBootstrap'
+import Nav from './components/Nav'
+import Img from './components/Img'
+import Icon from './components/Icon'
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Fragment>
+      < Nav />
+      < ExempleBootstrap />
+      <hr/>
+      < Img />
+      <hr/>
+      < Icon />
+    </Fragment>
+  )
 }
-
-export default App;
